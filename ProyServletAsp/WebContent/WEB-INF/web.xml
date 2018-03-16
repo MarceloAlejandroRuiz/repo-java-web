@@ -7,7 +7,7 @@
   
   <servlet>
       <servlet-name>login</servlet-name>
-      <servlet-class>ar.com.servlet.UserServlet.java</servlet-class>
+      <servlet-class>ar.com.servlet.UserServlet</servlet-class>
   </servlet>
   
   <servlet-mapping>
