@@ -27,8 +27,9 @@ public class UserServlet extends HttpServlet {
 			request.setAttribute("user", u);
 			RequestDispatcher dis = request.getRequestDispatcher("welcome.jsp");
 			dis.forward(request, response);
-		}
-
+		}else {
+			response.sendRedirect("register.jsp");
+		}			
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
