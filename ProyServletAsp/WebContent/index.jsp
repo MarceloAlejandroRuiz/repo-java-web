@@ -9,14 +9,17 @@
 <body>
     <div align="center">    
        <h3>Login de usuario</h3>
-       
+       <% Object o = request.getAttribute("NombreServlet");       
+         if( o != null){ %>
+	        <h4><% out.println(o.toString());}%></h4>	                
+        	       
        <form action="login.do" method="post">
           <p><input type="text" placeholder= "Ingrese el Nombre: " name="firstname" requiered><br></p>
+          <p><input type="text" placeholder= "Ingrese el Apellido: " name="lastname" requiered><br></p> 
           <p><input type="mail" placeholder= "Ingrese el Mail: " name="email" requiered><br></p>
           <input type="password" placeholder="ingrese el password: " name="password" required><br>	
 		 <input type="submit" value="login" ><br>       
        </form>
-    
-    </dir>   
+    </div>   
 </body>
 </html>

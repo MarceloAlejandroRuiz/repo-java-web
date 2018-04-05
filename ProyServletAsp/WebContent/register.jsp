@@ -8,5 +8,8 @@
 </head>
 <body>
    <h1 style="color: red">Por favor registrese</h1>
+    <form action="register.do" method="GET">
+      <input type="submit" value="register" ><br>
+    </form>
 </body>
 </html>
