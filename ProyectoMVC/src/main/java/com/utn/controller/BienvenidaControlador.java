@@ -14,7 +14,7 @@ public class BienvenidaControlador {
 	public String getGreeting(@PathVariable String name){
 		String result="Hello "+name;
 		return result;
-		}
+		} 
 	
 	
 	
