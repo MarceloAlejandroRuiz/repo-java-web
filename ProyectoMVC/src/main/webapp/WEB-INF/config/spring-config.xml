@@ -10,7 +10,7 @@
 <mvc:annotation-driven />
 	<mvc:resources mapping="/resources/**" location="/resources/" />
 	<context:component-scan base-package="com.utn"></context:component-scan>
-	
+	<!-- <context:property-placeholder location="src/main/java/com/utn/resources/dbinfo.properties"/> -->
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix">
@@ -20,6 +20,7 @@
 			<value>.jsp</value>
 		</property>
 	</bean>
-	
-	
+	<context:annotation-config />
+
+
 </beans>
