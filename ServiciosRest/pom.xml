@@ -7,6 +7,7 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>ServiciosRest Maven Webapp</name>
   <url>http://maven.apache.org</url>
+  
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -33,9 +34,36 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>4.0.7.RELEASE</version>
 	</dependency>
+	
+	<dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-core</artifactId>
+        <version>2.2.3</version>
+    </dependency>
+    <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-databind</artifactId>
+        <version>2.2.3</version>
+    </dependency>
+    <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-annotations</artifactId>
+        <version>2.2.3</version>
+    </dependency>
     
   </dependencies>
   <build>
     <finalName>ServiciosRest</finalName>
+    
+      <plugins>
+        <plugin>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <configuration>
+                <source>1.8</source>
+                <target>1.8</target>
+            </configuration>
+        </plugin>
+      </plugins>
+    
   </build>
 </project>
