@@ -1,9 +1,7 @@
 package com.utn.controller;
 
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -21,6 +19,8 @@ public class BienvenidaControlador {
 		return result;
 		} 
 	*/	
+	
+	//http://localhost:8080/ProyectoMVC/service/greeting/persona
 	
 	//@RequestMapping(value="/persona",method=RequestMethod.GET,headers = {"Accept=text/xml, application/json"})
 	@RequestMapping(value="/persona",method=RequestMethod.GET)
