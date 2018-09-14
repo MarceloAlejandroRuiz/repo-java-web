@@ -9,7 +9,7 @@
 <body>
        <h2>Ver producto</h2>
 
-	<a href="listar.html">Listar</a>
+	<a href="listar.do">Listar</a>
 	<table>
 		<tr>
 			<td>Nombre</td>
