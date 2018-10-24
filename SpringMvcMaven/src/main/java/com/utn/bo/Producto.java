@@ -1,11 +1,22 @@
 package com.utn.bo;
 
-public class Producto {
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+//java.io.Serializable
+
+@Entity
+@Table(name= "Productos")
+public class Producto implements java.io.Serializable  {
 	
 	private Long id;
 	private String nombre;
 	private Double precio;
-
+    
+	@Id
+	@GeneratedValue
 	public Long getId() {
 		return id;
 	}

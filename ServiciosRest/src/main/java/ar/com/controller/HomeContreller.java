@@ -33,7 +33,8 @@ public class HomeContreller {
 	@RequestMapping(value = "/cliente", method = RequestMethod.POST)
 	public ResponseEntity<Persona> setClient(@RequestBody Persona persona, HttpServletRequest request) {
 		try {
-			persona.setApellido(persona.getApellido());
+			//persona.setApellido(persona.getApellido());
+			persona.setApellido("marchelino");
 			persona.setNombre(persona.getNombre());
 			persona.setEdad(persona.getEdad());
 
