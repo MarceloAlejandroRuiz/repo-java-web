@@ -34,7 +34,7 @@ public class HomeContreller {
 	public ResponseEntity<Persona> setClient(@RequestBody Persona persona, HttpServletRequest request) {
 		try {
 			persona.setApellido(persona.getApellido());
-			persona.setNombre(persona.getNombre());
+			persona.setNombre("MARCELO");
 			persona.setEdad(persona.getEdad());
 
 			return ResponseEntity.status(HttpStatus.OK).body(persona);
