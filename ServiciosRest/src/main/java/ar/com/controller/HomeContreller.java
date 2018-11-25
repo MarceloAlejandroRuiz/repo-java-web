@@ -33,15 +33,11 @@ public class HomeContreller {
 	@RequestMapping(value = "/cliente", method = RequestMethod.POST)
 	public ResponseEntity<Persona> setClient(@RequestBody Persona persona, HttpServletRequest request) {
 		try {
-<<<<<<< HEAD
+
 			persona.setApellido(persona.getApellido());
 			persona.setNombre("MARCELO");
-=======
-			//persona.setApellido(persona.getApellido());
-			persona.setApellido("marchelino");
-			persona.setNombre(persona.getNombre());
->>>>>>> 85369105d305bb6befd64da2e7f86d5512b6d98d
 			persona.setEdad(persona.getEdad());
+
 
 			return ResponseEntity.status(HttpStatus.OK).body(persona);
 		} catch (Exception e) {
