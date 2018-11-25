@@ -5,11 +5,15 @@ import java.util.List;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Repository;
 import com.utn.bo.Producto;
+//import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 
 @Repository 
 public class ProductoDAOImp implements IProductoDAO {
 	protected static Logger logger = Logger.getLogger("ProductoDAOImp");
 	private List<Producto> productos = new ArrayList<Producto>();
+	
+	private SessionFactory sessionFactory;
 
 	@Override
 	public Long guardarProducto(Producto producto) {
@@ -35,8 +39,9 @@ public class ProductoDAOImp implements IProductoDAO {
 		p.setId(id);
 		p.setNombre("cartera");
 		p.setPrecio(10.2);
-
 		return p;
+		
+		//return (Producto) sessionFactory.getCurrentSession().get(Producto.class, id);
 	}
 
 	@Override
