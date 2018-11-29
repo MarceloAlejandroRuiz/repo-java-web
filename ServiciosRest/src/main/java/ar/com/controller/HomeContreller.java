@@ -35,7 +35,7 @@ public class HomeContreller {
 		try {
 
 			persona.setApellido(persona.getApellido());
-			persona.setNombre("MARCELO");
+			persona.setNombre("MarceloAlejandroRuiz");
 			persona.setEdad(persona.getEdad());
 
 
